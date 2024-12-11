@@ -1,10 +1,8 @@
-from dash import Dash, html, dcc, callback, Output, Input
 import plotly.express as px
 import pandas as pd
 
 print("getting data.....")
 df = px.data.carshare()
-app = Dash()
 
 app.layout = [
     html.H1(children='Title of Dash App', style={'textAlign':'center'}),
